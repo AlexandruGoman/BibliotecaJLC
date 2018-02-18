@@ -1,0 +1,25 @@
+<div class="container">
+  <input type="text" name="search">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Titlu</th>
+        <th>Autor</th>
+        <th>Editura si locul aparitiei</th>
+        <th>Anul publicatiei</th>
+        <th>Pret</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each books}}
+      <tr>
+        <td>{{titlu}}</td>
+        <td>{{autor}}</td>
+        <td>{{editura}}</td>
+        <td>{{an}}</td>
+        <td>{{pret}} ron</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
