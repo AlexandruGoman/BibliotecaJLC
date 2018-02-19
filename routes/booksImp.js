@@ -76,6 +76,13 @@ router.post('/addbook',
     res.redirect('/');
   });
 
+router.delete('booksImps/:_id', function(req, res) {
+  var id = req.params._id;
+  Book.removeBook(id, function(err, book) {
+    if (err) throw err;
+  })
+})
+
 
 
 function ensureAuthenticated(req, res, next) {

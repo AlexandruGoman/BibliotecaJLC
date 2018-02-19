@@ -3,12 +3,9 @@ var router = express.Router();
 
 var Book = require('../models/bookImp');
 
-
-
 router.get('/', ensureAuthenticated, (req, res) => {
   res.render('index');
-})
-
+});
 // router.get('/api/books', ensureAuthenticated, function(req, res) {
 //   Book.getBooks(function(err, books) {
 //     if (err) {
